@@ -126,6 +126,19 @@ namespace RobotBit {
         }
     }
 
+    //% blockId=RobotBit_StepperDegree block="步进电机(28BYJ-48) |%index|角度 %degree"
+    //% group="步进电机"
+    //% weight=90
+    export function StepperDegree(index: enSteppers, degree: number): void {
+        if (!initialized) {
+            initPCA9685()
+        }
+        setStepper(index, degree > 0);
+        degree = Math.abs(degree);
+        basic.pause(10240 * degree / 360);
+        MotorStopAll()
+    }
+
     //% blockId=RobotBit_StepperTurn block="步进电机(28BYJ-48) |%index|转 %turn|圈"
     //% group="步进电机"
     //% weight=89
