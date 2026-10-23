@@ -1,5 +1,5 @@
 //% color="#0066CC" weight=20 icon="\uf17b" block="步进电机"
-//% category="b"
+//% category="步进电机"
 namespace RobotBit {
 
     const PCA9685_ADD = 0x40
