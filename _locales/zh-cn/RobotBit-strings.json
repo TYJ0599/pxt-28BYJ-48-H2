@@ -1,0 +1,12 @@
+{
+
+  "RobotBit.StepperDegree|block": "步进电机(28BYJ-48) |%index|角度 %degree",
+  "RobotBit.StepperTurn|block": "步进电机(28BYJ-48) |%index|转 %turn|圈数",
+  "RobotBit.StepperDual|block": "双步进电机(角度) |B1 %degree1| B2 %degree2",
+  "RobotBit.PWMOFF|block":  "关闭PWM输出|%index"
+  
+
+  
+
+ 
+}
